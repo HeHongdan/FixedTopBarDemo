@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
         TwoSameTopBarActivity.start(activity);
     }
 
-    public void onClickOneTopBar(View view) {
-        OneTopBarActivity.start(activity);
-    }
-
     public void onClickListView(View view) {
         ListViewAddHeaderActivity.start(activity);
+    }
+
+    public void onClickOneTopBar(View view) {
+        OneTopBarActivity.start(activity);
     }
 
     public void onClickMaterialDesign(View view) {

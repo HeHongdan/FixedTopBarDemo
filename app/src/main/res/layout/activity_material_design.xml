@@ -30,16 +30,32 @@
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="90dp"
+        android:background="#3003"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler_view"
+
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#d2ebaf"/>
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="不满一页"
+            android:textSize="30sp"
+
+            android:background="#3030"
+            />
 
     </android.support.v4.widget.NestedScrollView>
 
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d2ebaf"
+
+        android:visibility="gone"
+        />
 </android.support.design.widget.CoordinatorLayout>
